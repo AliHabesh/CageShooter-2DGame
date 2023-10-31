@@ -1,16 +1,41 @@
-# This is a sample Python script.
+import pygame
 
-# Press Skift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Initialize the pygame
+pygame.init()
+
+# Create game window size
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
+
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+
+player = pygame.Rect((300, 250, 50, 50))
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def character_movement():
+    key = pygame.key.get_pressed()
+    if key[pygame.K_a]:
+        player.move_ip(-1, 0)
+    if key[pygame.K_d]:
+        player.move_ip(1, 0)
+    if key[pygame.K_s]:
+        player.move_ip(0, 1)
+    if key[pygame.K_w]:
+        player.move_ip(0, -1)
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# Game loop
+run = True
+while run:
+    screen.fill((0, 0, 0))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    pygame.draw.rect(screen, (255, 0, 0), player)
+    character_movement()
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            run = False
+
+    pygame.display.update()
+
+pygame.quit()

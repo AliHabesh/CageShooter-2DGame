@@ -14,7 +14,7 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 # player = pygame.Rect((300, 250, 50, 50))
 
 
-player = Shooter("assets/player_chaingun.png", 400, 300)
+player = Shooter("assets/player_chaingun.png", 500, 300)
 
 # Game loop
 run = True
@@ -23,6 +23,7 @@ while run:
 
     screen.blit(player.image, player.rect)
     player.character_movement()
+    player.character_rotation()
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:

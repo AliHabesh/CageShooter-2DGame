@@ -10,7 +10,12 @@ The Cage Shooter Game is a thrilling Python-based game built using the Pygame li
 - **Survival Challenge:** Test your skills and reflexes to survive for as long as possible amidst continuous enemy spawns.
 - **Dynamic World:** Engage in a dynamically changing gaming environment with challenging enemy AI.
 
-## How to Play
+## Controls
+- **`W, A, S, D:`** Move the character
+- **Mouse:** Rotate character's aim
+- **Mouse Click:** Shoot enemies
+
+## How to install
 1. **Install Python:** Make sure you have Python installed on your system. If not, you can download it from [Python's official website](https://www.python.org/).
 2. **Install Pygame:** Use pip to install the Pygame library by running:
     ```
@@ -25,11 +30,6 @@ The Cage Shooter Game is a thrilling Python-based game built using the Pygame li
     cd Cage-Shooter-Game
     python main.py
     ```
-
-## Controls
-- **W, A, S, D:** Move the character
-- **Mouse:** Rotate character's aim
-- **Mouse Click:** Shoot enemies
 
 ## Coming Soon
 - **Multiplayer Mode:** Stay tuned for the upcoming multiplayer feature!

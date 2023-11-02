@@ -21,6 +21,10 @@ The Cage Shooter Game is a thrilling Python-based game built using the Pygame li
     ```
     pip install pygame
     ```
+2. **Install Pytmx:** Use pip to install the Pytmx library by running:
+    ```
+    pip install pytmx
+    ```
 3. **Clone the Repository:** 
     ```
     git clone https://github.com/your-username/Cage-Shooter-Game.git

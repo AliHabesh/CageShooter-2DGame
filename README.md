@@ -1,4 +1,5 @@
 # Cage Shooter Game
+### (Application is a long term project, it is not finished currently)
 
 ## Description
 The Cage Shooter Game is a thrilling Python-based game built using the Pygame library. In this game, players control a character who is an ex-CIA agent hunted by adversaries seeking the secrets he holds. The character is equipped with a powerful gun and must survive waves of enemies constantly spawning and chasing after him in an attempt to eliminate him.
